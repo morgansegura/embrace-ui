@@ -2,6 +2,7 @@ import Tooltip from './embrace-ui/tooltip'
 import Dropdown from './embrace-ui/dropdown'
 import Tabs from './embrace-ui/tabs'
 import Snackbar from './embrace-ui/snackbar'
+import Modal from './embrace-ui/modal'
 
 // Create a tooltip
 const tooltip = new Tooltip(document.querySelector('.tooltip'));
@@ -27,5 +28,8 @@ const button = document.querySelector('button');
 button.addEventListener('click', () => {
     snackbar.show('thanks for clicking me');
 });
+
+//create modal
+const modal = new Modal(document.querySelector('.modal-overlay'))
 
 console.log("Embrace UI");
